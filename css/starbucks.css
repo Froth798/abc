@@ -1,0 +1,203 @@
+body{
+    min-width: 350px;
+}
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color:#fff;
+}
+aside header{
+    position: relative;
+    display: flex;
+    padding:20px;
+    align-items: center;
+}
+.log{
+    width: 36px;
+    height: 36px;
+    margin-right:20px;
+}
+.log img{
+    display: block;
+    width: 100%;
+}
+aside header nav ul{
+    display: flex;
+    height: 100%;
+    font-weight: bold;
+}
+aside header nav ul li{
+    margin-right:30px;
+}
+aside header .menu{
+    position: absolute;
+    right: 20px;
+}
+aside header .menu span{
+    display: block;
+}
+/* 登录 */
+aside .account{
+    display: flex;
+    height: calc(100% - 76px);
+    padding: 0 30px 0 80px;
+    align-items: center;
+}
+aside .account .center p{
+    margin-bottom:30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+aside .account .center .enter a{
+    color:#00A862;
+}
+aside .account .center .enter .login::before{
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: url(https://www.starbucks.com.cn/assets/icons/icon-account.svg)no-repeat center center;
+    vertical-align:middle;
+    margin-right:10px;
+}
+aside .account .center .enter .resigter{
+    padding: 4px 14px;
+    border: 1px solid #00A862;
+    border-radius:20px;
+    margin-left:30px;
+}
+
+/* banner */
+section{
+    width: 100%;
+    padding-left: 30%;
+    box-sizing: border-box;
+}
+section .banner img{
+    display: block;
+    width: 100%;
+}
+section .banner img.min-show{
+    display: none;
+}
+
+/* menu菜单 */
+.menu-box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: cadetblue;
+    opacity: 0;
+}
+.menu-box header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu-box header .close{
+    display: block;
+    width:28px;
+    font-size:24px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.show-menu{
+    display: block;
+    opacity: 1;
+}
+/* 小屏导航 */
+.min-nav{
+    display: none;
+}
+@media screen and (max-width:1080px){
+    aside{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    section{
+        width: 100%;
+        padding-left: 0;
+    }
+    .menu-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1080px) and (min-width:640px){
+    aside .account {
+        padding-left:20px ;
+    }
+    aside .account .enter{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:639px){
+    aside header{
+        display:none;
+    }
+
+    aside .account .enter{
+        display: none;
+    }
+    section .banner img.min-show{
+        display: block;
+    }
+    section .banner img.max-show{
+        display: none;
+    }
+    aside .account {
+        padding-left:24px;
+    }
+    aside .account .center p{
+        padding:14px 0;
+        margin-bottom:0;
+    }
+    /* 小屏导航 */
+    .min-nav{
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        
+        background-color: #fff;
+    }
+    .min-nav ul{
+        display: flex;
+        height: 55px;
+        padding: 0 6px;
+    }
+    .min-nav ul li{
+        width: 20%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .min-nav ul li a::before{
+        display: block;
+        content: '';
+        width: 28px;
+        height: 28px;
+        margin: 0 auto;
+        background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg)no-repeat center center;
+    }
+    .min-nav ul li:nth-child(2) a::before{
+        background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg);
+    }
+    .min-nav ul li:nth-child(3) a::before{
+        background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg);
+    }
+    .min-nav ul li:nth-child(4) a::before{
+        background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg);
+    }
+    .min-nav ul li:nth-child(5) a::before{
+        background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg);
+    }
+}
