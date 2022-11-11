@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="header content-width">
+            <a href="#" class="logo">
+                <img src="img/logo.jpg" alt="">
+            </a>
+            <p class="title">景秀教育欢迎你</p>
+            <span class="menu" id="menu">
+                <img src="img/icon_03.png" alt="">
+            </span>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="xygk.html">学院概括</a>
+                    </li>
+                    <li>
+                        <a href="#">课程设置</a>
+                    </li>
+                    <li>
+                        <a href="xyfc.html">校园风采</a>
+                    </li>
+                    <li>
+                        <a href="#">学院作品</a>
+                    </li>
+                    <li>
+                        <a href="#">师资力量</a>
+                    </li>
+                    <li>
+                        <a href="#">学院服务</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        //获取按钮
+        var menuBtn = document.getElementById("menu");
+        //获取要切换的导航
+        var navDom = document.getElementById("nav")
+        //点击按钮切换导航的显示和隐藏
+        menuBtn.onclick = function(){
+            // toggle 切换
+            // 操作切换类名
+            navDom.classList.toggle("change")
+        }
+    </script>
+    <!-- 滑动时间0.5s  停留时间2s -->
+    <div class="banner-container">
+        <div class="swiper-container banner-position">
+            <div class="swiper-wrapper banner">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner1.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner2.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner3.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner4.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner5.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner6.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner7.jpg">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Navigation 左右箭头 -->
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-button-next swiper-button"></div>
+            <!-- Add Pagination 分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: { //分页器
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true, //循环模式选项
+            navigation: { //左右箭头
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- 学院服务 -->
+    <div class="xyfw content-width">
+        <h2 class=" contact-title">学院服务</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/service_1_1.jpg" alt="">
+                    <div class="text">
+                        <h3>报名流程</h3>
+                        <p>迈出成功的一步</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/service_1_1.jpg" alt="">
+                    <div class="text">
+                        <h3>报名流程</h3>
+                        <p>迈出成功的一步</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/service_1_1.jpg" alt="">
+                    <div class="text">
+                        <h3>报名流程</h3>
+                        <p>迈出成功的一步</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/service_1_1.jpg" alt="">
+                    <div class="text">
+                        <h3>报名流程</h3>
+                        <p>迈出成功的一步</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 课程设置 -->
+    <div class="lesson content-width">
+        <h2 class=" contact-title">课程设置</h2>
+        <ul>
+            <li class="ml-0">
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                    <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                    <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                    </div>
+                </a>
+            </li>
+            <li class="ml-0">
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                    <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                    <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="img/course_03.jpg" alt="">
+                    <div class="hour-itenm">
+                    <h3>数字影视动画</h3>
+                    <p>
+                        掌握系统动画理论，具备影视动画绘制及动画设计知识，能够熟练地从事影视
+						动画制作、影视特效设计、游戏美术设计等工作的应用型高级专业人才......
+                    </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 校园风采 -->
+    <div class="campus content-width">
+        <h2 class="contact-title">校园风采</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/campus_03.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/campus_05.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/campus_07.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/campus_12.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/campus_13.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/campus_15.gif" alt="">
+                    <div class="campus-text">
+                        <h4>趣味运动会</h4>
+                        <p>
+                            运动会学生在积极的完成比赛
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 学员作品 -->
+    <div class="student content-width js-contact">
+        <h2 class="contact-title">
+            学员作品
+            <span class="student-btn down" id="down">
+                <img src="img/tubiao_03.png">
+            </span>
+            <span class="student-btn more" id="more">
+                More
+            </span>
+        </h2>
+        <ul class="contact-list" id="contact-list">
+            <li>
+                <a href="#">
+                    <img src="img/works_03.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/works_04.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/works_05.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/works_06.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/works_07.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/works_09.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_10.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_11.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_12.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_13.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_14.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_15.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_16.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_17.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_18.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_19.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_20.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_21.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_22.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/works_23.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 明星学员 -->
+    <div class="star content-width js-contact">
+        <h2 class="contact-title">
+            明星学员
+            <span class="student-btn down" id="down">
+                <img src="img/tubiao_03.png">
+            </span>
+            <span class="student-btn more" id="more">
+                More
+            </span>
+        </h2>
+        <ul class="contact-list" id="contact-list">
+            <li>
+                <a href="#">
+                    <img src="img/star_03.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/star_05.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/star_07.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/star_09.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/star_15.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/star_16.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_17.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_18.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_24.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_25.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_26.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/star_27.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 就业单位 -->
+    <div class="employment content-width js-contact">
+        <h2 class="contact-title">
+            就业单位
+            <span class="student-btn down" id="down">
+                <img src="img/tubiao_03.png">
+            </span>
+            <span class="student-btn more" id="more">
+                More
+            </span>
+        </h2>
+        <ul class="contact-list" id="contact-list">
+            <li>
+                <a href="#">
+                    <img src="img/employment_03.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/employment_05.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/employment_07.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/employment_09.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/employment_11.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/employment_13.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_21.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_22.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_23.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_24.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_25.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_26.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_33.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_34.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_35.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_36.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_37.jpg" alt="">
+                </a>
+            </li>
+            <li class="show">
+                <a href="#">
+                    <img src="img/employment_38.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部 -->
+    <footer>
+
+    </footer>
+    <!-- 点击加载更多 -->
+    <script>
+        var contactDom = document.querySelectorAll(".js-contact")
+        var moreBtn = document.querySelectorAll(".more");
+        var downBtn = document.querySelectorAll(".down");
+        var len = moreBtn.length;
+        for(var i=0; i<len; i++){
+            moreBtn[i].index = i;
+            moreBtn[i].onclick = function(){
+                moreBtn[this.index].classList.toggle("none")
+                downBtn[this.index].classList.toggle("block")
+                var liDom = contactDom[this.index].querySelectorAll(".contact-list li")
+                for(var j=0; j<liDom.length; j++){
+                    if(liDom[j].className == "show"){
+                        liDom[j].className = ""
+                    }
+                }
+            }
+        }
+        for(var i=0; i<len; i++){
+            downBtn[i].index = i;
+            downBtn[i].onclick = function(){
+                moreBtn[this.index].classList.toggle("none")
+                downBtn[this.index].classList.toggle("block")
+                var liDom = contactDom[this.index].querySelectorAll(".contact-list li")
+                for(var j=0; j<liDom.length; j++){
+                    if(j>5){
+                        liDom[j].className = "show"
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html> 
